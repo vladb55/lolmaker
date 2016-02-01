@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lolmaker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="situation_1">Situation 1</string>
+    <string name="situation_2">Situation 2</string>
+    <string name="situation_3">Situation 3</string>
+    <string name="situation_4">Situation 4</string>
+</resources>
