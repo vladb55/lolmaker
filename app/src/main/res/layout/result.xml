@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/situation_ll"
+    android:layout_height="match_parent">
+
     android:weightSum="100">
 
     <LinearLayout
@@ -35,20 +35,18 @@
         android:layout_weight="80"
         android:background="@drawable/background_image">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="18dp"
-            android:text="Question"
-            android:textSize="20sp"
-            android:id="@+id/tvQuestion"
-            android:textColor="#000000" />
-
-        <EditText
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etAnswers"
-            android:layout_margin="80dp"/>
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 
@@ -65,4 +63,5 @@
             android:id="@+id/btnNext"
             android:background="@drawable/next_image"/>
     </LinearLayout>
+
 </LinearLayout>
