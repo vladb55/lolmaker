@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * Created by Vlady on 02.02.2016.
  */
@@ -28,6 +31,7 @@ public class Situation extends ActionBarActivity {
         index_xx = (TextView) findViewById(R.id.tvxx);
         index_yy = (TextView) findViewById(R.id.tvyy);
         btnNext = (Button) findViewById(R.id.btnNext);
+        btnNext.setVisibility(View.VISIBLE);
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +42,10 @@ public class Situation extends ActionBarActivity {
                         index++;
                         setText();
                     }
-                    else showFinal();
+                    else {
+                        showFinal();
+                        btnNext.setVisibility(View.GONE);
+                    }
                 }
             }
         });
@@ -74,18 +81,22 @@ public class Situation extends ActionBarActivity {
     }
 
     private String pasteAnswers(String[] A, String[] B){
-        int indexA = 0;
-        for(int i = 0; i < B.length; i++){
-            if(B[i] == null || B[i] == ""){
-                B[i] = A[indexA];
-                indexA++;
-            }
-        }
 
+        // Записываем все элементы массива в строку через пробел
+        int index_A = 0;
         String result = "";
         for(String s: B)
-            result += s;
+            result += s + " ";
 
+        // Находим итемы, заменяем на ответы
+        StringBuffer sb = new StringBuffer();
+        Matcher m = Pattern.compile("item").matcher(result);
+        while(m.find()){
+            m.appendReplacement(sb, A[index_A]);
+            index_A++;
+        }
+        m.appendTail(sb);
+        result = sb.toString();
         return result;
     }
 
@@ -100,10 +111,7 @@ public class Situation extends ActionBarActivity {
         index_xx.setVisibility(View.GONE);
         index_yy.setVisibility(View.GONE);
         etAnswers.setVisibility(View.GONE);
-        String result = "";
-        for(String s: answers)
-            result += s;
-        tvQuestion.setText(result);
+        tvQuestion.setText(pasteAnswers(answers, situation));
     }
 
 }

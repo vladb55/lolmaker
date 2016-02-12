@@ -3,41 +3,41 @@
     
     <string-array name="situation1">
         <item>Привет, меня зовут </item>
-        <item></item>
+        <item> item </item>
         <item>, но друзья меня называют </item>
-        <item></item>
+        <item> item </item>
         <item>. Это все потому что у меня </item>
-        <item></item>
+        <item> item </item>
         <item> лицо. </item>
     </string-array>
 
     <string-array name="situation2">
         <item>У меня есть друг </item>
-        <item></item>
+        <item>item</item>
         <item>, и он любит вертеть </item>
-        <item></item>
+        <item>item</item>
         <item>. Многие из-за этого </item>
-        <item></item>
+        <item>item</item>
         <item> и сходят с ума. </item>
     </string-array>
 
     <string-array name="situation3">
         <item>У него очень </item>
-        <item></item>
+        <item>item</item>
         <item> натура, своей загадочностью он превосходит даже </item>
-        <item></item>
+        <item>item</item>
         <item>. Это все потому что он носит </item>
-        <item></item>
+        <item>item</item>
         <item> в кармане. </item>
     </string-array>
 
     <string-array name="situation4">
         <item>Привет, </item>
-        <item></item>
+        <item>item</item>
         <item>, меня зовут </item>
-        <item></item>
+        <item>item</item>
         <item>. Ладно, желаю вам </item>
-        <item></item>
+        <item>item</item>
         <item> и спасибо что выслушали. </item>
     </string-array>
 
