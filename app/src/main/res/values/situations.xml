@@ -9,6 +9,13 @@
         <item>. Это все потому что у меня </item>
         <item> item </item>
         <item> лицо. </item>
+        <item>Обычно, на работе я</item>
+        <item> item </item>
+        <item> item </item>
+        <item>, но коллеги стараются не обращать не это внимание. </item>
+        <item> Зарплата устраивает. Иногда хватает даже на </item>
+        <item> item </item>
+        <item> item </item>
     </string-array>
 
     <string-array name="situation2">
@@ -19,6 +26,12 @@
         <item>. Многие из-за этого </item>
         <item>item</item>
         <item> и сходят с ума. </item>
+        <item>Пару лет назад, мы вместе с ним искали</item>
+        <item> item </item>
+        <item>. Как обычно, за гаражами. </item>
+        <item> Как-то раз, хозяин гаража заметил это, и сказал нам выгулять его </item>
+        <item> item </item>
+        <item> . Но это уже совсем другая история :) </item>
     </string-array>
 
     <string-array name="situation3">
