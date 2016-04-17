@@ -11,13 +11,14 @@
         android:layout_height="0dp"
         android:layout_weight="8"
         android:gravity="center"
-        android:background="@drawable/border_image">
+        android:background="#6F40BF">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000000"
             android:text="XX/"
+            android:textSize="27sp"
             android:id="@+id/tvxx" />
 
         <TextView
@@ -25,6 +26,7 @@
             android:layout_height="wrap_content"
             android:textColor="#000000"
             android:text="YY"
+            android:textSize="27sp"
             android:id="@+id/tvyy" />
     </LinearLayout>
 
@@ -33,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="80"
-        android:background="@drawable/background_image">
+        android:background="#68B83D">
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,12 +59,12 @@
         android:layout_height="0dp"
         android:layout_weight="12"
         android:gravity="center|center_horizontal"
-        android:background="@drawable/border_image">
+        android:background="#7144C1">
 
         <Button
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btnNext"
-            android:background="@drawable/next_image"/>
+            android:background="@drawable/nextbtn"/>
     </LinearLayout>
 </LinearLayout>

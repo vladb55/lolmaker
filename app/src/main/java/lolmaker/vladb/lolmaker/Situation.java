@@ -1,5 +1,6 @@
 package lolmaker.vladb.lolmaker;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -24,6 +25,8 @@ public class Situation extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.situation);
+        getSupportActionBar().hide();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         index = 0;
         tvQuestion = (TextView) findViewById(R.id.tvQuestion);
